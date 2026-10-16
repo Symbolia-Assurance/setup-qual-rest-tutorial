@@ -1,0 +1,18 @@
+{
+  "elevation_writers": [],
+  "execution_authorized": false,
+  "hardware_authorized": false,
+  "id": "flask-38415699aa40",
+  "idiom": "flask-session-decorator",
+  "industrial_release_authorized": false,
+  "language": "python",
+  "libraries": [],
+  "physical_validation": false,
+  "public_routes": [],
+  "registrations_complete": true,
+  "release_allowed": false,
+  "schema": "assure.python-auth.declaration/v1",
+  "self_approved": false,
+  "signout_views": [],
+  "simulation": true
+}
