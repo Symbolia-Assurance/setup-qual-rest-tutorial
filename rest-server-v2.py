@@ -114,5 +114,13 @@ api.add_resource(TaskListAPI, '/todo/api/v1.0/tasks', endpoint='tasks')
 api.add_resource(TaskAPI, '/todo/api/v1.0/tasks/<int:id>', endpoint='task')
 
 
+class TaskExportAPI(Resource):
+    def get(self):
+        return {'tasks': [marshal(task, task_fields) for task in tasks]}
+
+
+api.add_resource(TaskExportAPI, '/todo/api/v1.0/tasks/export', endpoint='tasks_export')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
